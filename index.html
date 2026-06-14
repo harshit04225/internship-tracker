@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Internship Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>🚀 Internship Tracker</h1>
+
+    <!-- DASHBOARD -->
+    <div class="dashboard">
+      <div class="card">Total <span id="total">0</span></div>
+      <div class="card">Applied <span id="applied">0</span></div>
+      <div class="card">Interview <span id="interview">0</span></div>
+      <div class="card">Selected <span id="selected">0</span></div>
+    </div>
+
+    <!-- FORM -->
+    <div class="form">
+      <input type="text" id="company" placeholder="Company Name">
+      <input type="text" id="role" placeholder="Role">
+
+      <select id="status">
+        <option value="Applied">Applied</option>
+        <option value="Interview">Interview</option>
+        <option value="Selected">Selected</option>
+        <option value="Rejected">Rejected</option>
+      </select>
+
+      <button onclick="addInternship()">Add</button>
+      <button onclick="clearAll()">Clear All</button>
+    </div>
+
+    <!-- FILTERS -->
+    <div class="filters">
+      <button onclick="filterData('All')">All</button>
+      <button onclick="filterData('Applied')">Applied</button>
+      <button onclick="filterData('Interview')">Interview</button>
+      <button onclick="filterData('Selected')">Selected</button>
+      <button onclick="filterData('Rejected')">Rejected</button>
+    </div>
+
+    <!-- LIST -->
+    <div id="list"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

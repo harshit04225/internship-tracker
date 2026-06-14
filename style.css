@@ -1,0 +1,103 @@
+body {
+  font-family: Arial;
+  background: #f4f6f9;
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* DASHBOARD */
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  width: 23%;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* FORM */
+.form {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+input, select {
+  padding: 10px;
+  flex: 1;
+}
+
+button {
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* FILTERS */
+.filters {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.filters button {
+  margin: 5px;
+  background: #444;
+}
+
+/* LIST */
+.item {
+  background: white;
+  margin: 10px 0;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: 0.2s;
+}
+
+.item:hover {
+  transform: scale(1.02);
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.Applied { background: orange; }
+.Interview { background: blue; }
+.Selected { background: green; }
+.Rejected { background: red; }
+
+.delete {
+  background: red;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
